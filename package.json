@@ -1,0 +1,22 @@
+{
+  "name": "glitchies",
+  "version": "1.0.0",
+  "description": "Create an glitch animation on any html element",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dagashihime/glitchies.git"
+  },
+  "author": "dagashihime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dagashihime/glitchies/issues"
+  },
+  "homepage": "https://github.com/dagashihime/glitchies#readme",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
