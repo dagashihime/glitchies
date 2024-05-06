@@ -1,6 +1,6 @@
 {
   "name": "glitchies",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create an glitch animation on any html element",
   "main": "index.ts",
   "scripts": {

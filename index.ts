@@ -40,7 +40,9 @@ const setupGlitchies = ()=> {
 
             clone.style.position = 'absolute';
             clone.style.inset = '0';
-            clone.style.transform = `translate${Math.round(Math.random()) === 0 ? 'X' : 'Y'}(${Math.round(Math.random() * 11) - 5}%)`;
+
+            const axis = Math.round(Math.random()) === 0 ? 'X' : 'Y'
+            clone.style.transform = `translate${axis}(${Math.round(Math.random() * 10) - 5}%)`;
 
             if(index === 0) {
                 clone.animate([
@@ -53,7 +55,7 @@ const setupGlitchies = ()=> {
             }
 
             clone.animate([0,1,2,3,4,5,6,7,8,9,10].map(()=> {
-                return { clipPath: polygons[Math.round(Math.random() * (polygons.length + 1))] }
+                return { clipPath: polygons[Math.round(Math.random() * (polygons.length - 1))] }
             }), { duration: (Math.round(Math.random() * 5) + 1) * 400, iterations: Infinity })
         });
 
